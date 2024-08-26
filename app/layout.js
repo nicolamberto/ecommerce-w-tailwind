@@ -1,12 +1,15 @@
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Hind, Hind_Guntur, Roboto_Condensed, Arimo } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header";
 import { CartProvider } from "@/context/cart";
 import { FiltersProvider } from "@/context/filters";
 import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({subsets:['latin']})
+const roboto = Roboto_Condensed({subsets: ['latin'], weight:['400']})
 
 export const metadata = {
   title: "Create Next App",
@@ -17,10 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <FiltersProvider>
       <html lang="en" className="">
-        <body className={`${montserrat.className} w-full flex justify-center items-center flex-col`}>
+        <body className={`${roboto.className} w-full flex justify-center items-center flex-col`}>
           <Header />
-          <NavBar/>
           {children}
+          <Footer/>
         </body>
       </html>
     </FiltersProvider>

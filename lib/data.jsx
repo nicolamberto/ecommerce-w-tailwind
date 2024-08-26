@@ -47,6 +47,37 @@ import carimg1 from '@/public/carousel1.jpg'
 import carimg2 from '@/public/carousel2.jpg'
 import carimg3 from '@/public/carousel3.jpg'
 
+import banner1 from '@/public/banner1.webp'
+import banner2 from '@/public/banner2.webp'
+import banner3 from '@/public/banner3.webp'
+import banner4 from '@/public/banner4.webp'
+import banner5 from '@/public/banner5.webp'
+
+import categoriacamisas from '@/public/categoriacamisas.webp'
+import categoriabuzos from '@/public/categoriabuzos.webp'
+import categoriacamperas from '@/public/categoriacamperas.webp'
+import categoriachalecos from '@/public/categoriachalecos.webp'
+import categoriajeans from '@/public/categoriajeans.webp'
+import categoriasweaters from '@/public/categoriasweaters.webp'
+
+import bannerpromoabrigos from '@/public/bannerpromoabrigos.webp'
+import promoabrigos1 from '@/public/promoabrigos1.webp'
+import promoabrigos2 from '@/public/promoabrigos2.webp'
+import promoabrigos3 from '@/public/promoabrigos3.webp'
+import promoabrigos4 from '@/public/promoabrigos4.webp'
+
+import bannerpromo2prendas from '@/public/bannerpromo2prendas.webp'
+import promo2prendas1 from '@/public/promo2prendas1.webp'
+import promo2prendas2 from '@/public/promo2prendas2.webp'
+import promo2prendas3 from '@/public/promo2prendas3.webp'
+import promo2prendas4 from '@/public/promo2prendas4.webp'
+
+import { FaTruck, FaStore  } from "react-icons/fa";
+import { AiFillSafetyCertificate, AiFillQuestionCircle  } from "react-icons/ai";
+import { MdOutlinePublishedWithChanges } from "react-icons/md";
+import { BsFillCreditCard2BackFill } from "react-icons/bs";
+
+
 export const links = [
     {
         name: 'instagram',
@@ -62,7 +93,6 @@ export const links = [
     }
 
 ]
-
 
 export const products = [
     {
@@ -374,16 +404,192 @@ export const products = [
     
 ]
 
-
 export const carouselImgs = [
     {
-        url: carimg1
+        url: banner1
     },
     {
-        url: carimg2
+        url: banner2
     },
     {
-        url: carimg3
+        url: banner3
     }
 ]
 
+export const categories = [
+    {
+        name: 'camisas',
+        img: categoriacamisas
+    },
+    {
+        name: 'buzos',
+        img: categoriabuzos
+    },
+    {
+        name: 'camperas',
+        img: categoriacamperas
+    },
+    {
+        name: 'chalecos',
+        img: categoriachalecos
+    },
+    {
+        name: 'jeans',
+        img: categoriajeans
+    },
+    {
+        name: 'sweaters',
+        img: categoriasweaters
+    },
+]
+
+export const promoabrigos = [
+    {
+        name: 'SOBRETODO CLÁSICO NEGRO',
+        oldprice: 269999,
+        newprice: 161999,
+        off: "40%",
+        ninequot: 18000,
+        img: promoabrigos1
+    },
+    {
+        name: 'CAMPERA IMPERMEABLE GRIS',
+        oldprice: 116665,
+        newprice: 69999,
+        off: "40%",
+        ninequot: 7778,
+        img: promoabrigos2
+    },
+    {
+        name: 'CAMPERA IMPERMEABLE NEGRA',
+        oldprice: 116665,
+        newprice: 69999,
+        off: "40%",
+        ninequot: 7778,
+        img: promoabrigos3
+    },
+    {
+        name: 'CAMPERA CAMISACO A CUADROS NEGRA',
+        oldprice: 119998,
+        newprice: 59999,
+        off: "50%",
+        ninequot: 6667,
+        img: promoabrigos4
+    },
+]
+
+export const promo2prendas = [
+    {
+        name: 'BUZO LISO DE FRISA NEGRO',
+        price: 44999,
+        ninequot: 5000,
+        img: promo2prendas1,
+        promo: '2DA AL 70%'
+    },
+    {
+        name: 'BUZO LISO DE FRISA AZUL MARINO',
+        price: 44999,
+        ninequot: 5000,
+        img: promo2prendas2,
+        promo: '2DA AL 70%'
+    },
+    {
+        name: 'BUZO CAMPERA LISO DE FRISA GRIS CLARO',
+        price: 54999,
+        ninequot: 6111,
+        img: promo2prendas3,
+        promo: '2DA AL 80%'
+    },
+    {
+        name: 'BUZO CAMPERA RÚSTICO GRIS MELANGE',
+        price: 49999,
+        ninequot: 5555,
+        img: promo2prendas4,
+        promo: '2DA AL 50%'
+    },
+]
+
+
+export const benefits = [
+    {
+        logo: <FaTruck/>,
+        title: 'Envío gratis a todo el pais',
+        subtitle: 'en compras superiores a $69.999'
+    },
+    {
+        logo: <FaStore/>,
+        title: 'Retiro en tienda',
+        subtitle: 'Elegí tu tienda más cercada'
+    },
+    {
+        logo: <AiFillSafetyCertificate/>,
+        title: 'Compra 100% segura',
+        subtitle: 'Tu información protegida y garantizada'
+    },
+    {
+        logo: <AiFillQuestionCircle/>,
+        title: '¿Necesitás ayuda?',
+        subtitle: 'Aclará todas tus dudas y consultas'
+    },
+    {
+        logo: <MdOutlinePublishedWithChanges/>,
+        title: 'Cambios',
+        subtitle: 'Hasta 30 días después de la compra'
+    },
+    {
+        logo: <BsFillCreditCard2BackFill/>,
+        title: 'Financiación',
+        subtitle: 'Conocé las promociones bancarias'
+    },
+]
+
+export const footer = [
+    {
+        name: 'HOT SALE',
+        link: '#'
+    },
+    {
+        name: 'CYBER MONDAY',
+        link: '#'
+    },
+    {
+        name: 'PROMOCIONES',
+        link: '#'
+    },
+    {
+        name: 'AYUDA',
+        link: '#'
+    },
+    {
+        name: 'LOCALES',
+        link: '#'
+    },
+    {
+        name: 'CONTACTO',
+        link: '#'
+    },
+    {
+        name: 'ARREPENTIMIENTO DE COMPRA',
+        link: '#'
+    },
+    {
+        name: 'TERMINOS Y CONDICIONES',
+        link: '#'
+    },
+    {
+        name: 'POLITICA DE PRIVACIDAD',
+        link: '#'
+    },
+    {
+        name: 'VENTA CORPORATIVA',
+        link: '#'
+    },
+    {
+        name: 'FRANQUICIAS',
+        link: '#'
+    },
+    {
+        name: 'DEFENSA DEL CONSUMIDOR',
+        link: '#'
+    },
+]
