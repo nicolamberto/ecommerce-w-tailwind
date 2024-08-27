@@ -26,18 +26,23 @@ export default function Carousel() {
     };
 
     return (
-        <div className=" max-w-[1450px]">
-            <Slider {...settings} className="flex justify-center items-center">
+        <div className=" max-w-[1600px]">
+            <div className="xl:w-[1250px] lg:w-full md:w-[750px] sm:hidden md:block">
+                <Slider {...settings}>
 
-                {carouselImgs.map(i=>(
-                    <div>
-                        <Image src={i.url}/>
-                    </div>
-                ))}
+                    {carouselImgs.map(i => (
+                        <div className="grid grid-cols-1">
+                            <Image src={i.url} />
+                        </div>
 
-                
-            </Slider>
+
+                    ))}
+
+
+                </Slider>
+            </div>
         </div>
+
 
     )
 }
