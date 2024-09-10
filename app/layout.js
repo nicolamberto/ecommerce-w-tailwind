@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "../components/header";
 import { CartProvider } from "@/context/cart";
 import { FiltersProvider } from "@/context/filters";
-import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 

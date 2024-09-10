@@ -8,7 +8,8 @@ export const FiltersContext = createContext()
 export function FiltersProvider({children}) {
      const [filters, setFilters] = useState({
         category:['all'],
-        mark:'all',
+        subcategory:['all'],
+        talle:['all']
      })
 
     return (
