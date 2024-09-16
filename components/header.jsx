@@ -7,26 +7,7 @@ import { IoPerson } from "react-icons/io5";
 import Image from "next/image";
 import logo from '@/public/logomacowens.webp'
 import Link from "next/link";
-
-{/* <div className="relative flex items-center justify-center gap-16 bg-gray-700 p-6 w-full h-[4rem] text-2xl text-gray-400">
-            <h2 className="font-extrabold text-4xl">logo</h2>
-            <div className="relative flex items-center justify-center gap-2">
-                <input type="search" name="search" placeholder="Search items..." className=" w-[26rem] h-8 rounded-sm placeholder:text-sm placeholder:pl-2 bg-gray-200"/>
-                <button>{<FaSearch className="w-5"/>}</button>
-            </div>
-            
-           
-            <button><FaCartShopping/></button>
-            <ul className="flex flex-row justify-center items-center gap-2 absolute right-4">
-                 {links.map((link) => (
-                    <li key={link.name}>
-                        {link.icon}
-                    </li>
-                ))} 
-            </ul>
-                
-           
-        </div> */}
+import ModalCart from "./cart/modal-cart/modalcart";
 
 
 
@@ -56,14 +37,14 @@ export default function Header() {
                         <Image src={logo} alt="logo" />
                     </div>
 
-                    <div className=" flex flex-row justify-center items-center gap-4">
+                    <div className="relative flex flex-row justify-center items-center gap-4">
                         <div className="relative flex flex-row justify-center items-center">
                             <input type="search" name="search" placeholder="¿Que estas buscando?" className="w-full h-9 border border-slate-300 placeholder:text-xs placeholder:pl-2" />
                             <button className="absolute right-1 text-gray-400 text-2xl">{<IoIosSearch />}</button>
                         </div>
                         <button className=" text-2xl">{<IoPerson />}</button>
                         <button className="text-2xl">{<FaCartShopping />}</button>
-
+                        <ModalCart/>
                     </div>
                 </div>
                 <div></div>

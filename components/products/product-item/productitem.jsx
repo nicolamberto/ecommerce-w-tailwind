@@ -1,14 +1,26 @@
+'use client'
+
 import Image from 'next/image'
+
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
+
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+
 const ProductItem = ({ product }) => {
 
     console.log(product.name.replace(/ /g, '%'));
-    
-    
-    
+
+
+
     const [currentIndex, setCurrentIndex] = useState(product.thumbnails[0])
 
     const prevImg = () => {
