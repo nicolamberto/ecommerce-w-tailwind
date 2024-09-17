@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+import { IoIosAdd } from "react-icons/io";
+import { BsCartPlus } from "react-icons/bs";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -14,10 +16,11 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
+import { useCart } from '@/hooks/useCart'
 
 const ProductItem = ({ product }) => {
 
-    console.log(product.name.replace(/ /g, '%'));
+    const { addToCart } = useCart()
 
 
 
@@ -79,14 +82,21 @@ const ProductItem = ({ product }) => {
                     <IoIosArrowForward onClick={nextImg} />
                 </div>
 
+                <div className='absolute hidden group-hover:block bg-black text-white bottom-2 right-[50%] translate-y-0 translate-x-[-50%] '>
+                    <p>
+                        {product.talle}
+                    </p>
+                </div>
+
             </div>
-            <div className='flex flex-col items-center justify-center gap-1'>
+            <div className='flex flex-col items-center justify-center gap-1 w-full relative'>
                 <p className=' text-center text-xs font-extralight pt-1'>{product.name}</p>
                 <div className='flex justify-around items-center flex-row w-full'>
                     <p className='font-semibold text-sm'>${product.price}</p>
-                    {/* <button className='m-1 p-1 border border-blue rounded-xl text-sm text-center' onClick={() => addToCart(product)}>Choose</button> */}
+
                 </div>
                 <p className='text-xs text-gray-500'>Nueve cuotas sin interes de $6550</p>
+                <button onClick={() => addToCart(product)} className='absolute top-0 right-2'><BsCartPlus size={23} /></button>
             </div>
 
 

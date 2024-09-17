@@ -8,12 +8,17 @@ import { notFound } from 'next/navigation'
 import React from 'react'
 import { infoproductlogistic } from '@/lib/data'
 import ProductSlideShow from '@/components/product/slideshow/productslideshow'
+import { useCart } from '@/hooks/useCart'
 
 
 const dataProducts = collection
 
 
 const page = ({ params }) => {
+
+  const {addToCart, cart} = useCart()
+  console.log(cart);
+  
 
   const { name } = params
 
@@ -67,7 +72,7 @@ const page = ({ params }) => {
 
         {/* boton de agregar al carrito */}
         <div>
-          <button className='bg-gray-900 text-gray-200 p-3'>AGREGAR AL CARRITO</button>
+          <button className='bg-gray-900 text-gray-200 p-3' onClick={()=>addToCart(product)}>AGREGAR AL CARRITO</button>
         </div>
 
         {/* sliders de informacion */}

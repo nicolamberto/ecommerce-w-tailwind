@@ -1,48 +1,6 @@
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-import ssdadata from '@/public/DISCO SOLIDO SSD ADATA 1TB M2 NVME GAMMIX S70 7400MBS.png'
-import ssdcorsair from '@/public/SSDCORSAIR.png'
-import ssdpny from '@/public/SSDPNY.png'
-import ssdpnyportatil from '@/public/SSDPNYPORTATIL.png'
-import ssdwestern from '@/public/SSDWESTERN.png'
-import ssdportatillexar from '@/public/SSDPORTATILLEXAR.png'
-
-import ramadata from '@/public/ramadata.png'
-import ramkingston from '@/public/ramkingston.jpg'
-import ramlexar from '@/public/ramlexar.png'
-import rampnygamingwhite from '@/public/rampnygamingwhite.png'
-import rampnysilver from '@/public/rampnysilver.jpg'
-import rampnyxlr8 from '@/public/rampnyxlr8.png'
-
-import microi3 from '@/public/microi3.jpg'
-import microi7 from '@/public/microi7.png'
-import microi9 from '@/public/microi9.jpg'
-import microryzen5 from '@/public/microryzen5.jpg'
-import microryzen7 from '@/public/microryzen7.png'
-import microryzen9 from '@/public/microryzen9.jpg'
-
-import mbbiostar from '@/public/mbbiostar.png'
-import mbgigabyte from '@/public/mbgigabyte.png'
-import mbmsi from '@/public/mbmsi.png'
-import mbasrock from '@/public/mbasrock.png'
-import mbasusrog from '@/public/mbasusrog.png'
-import mbasusprime from '@/public/mbasusprime.png'
-
-import gpasus from '@/public/gpuasus.png'
-import gpugigabyte4060 from '@/public/gpugigabyte4060.png'
-import gpugigabyte4070 from '@/public/gpugigabyte4070.png'
-import gpumsi from '@/public/gpumsi.png'
-import gpupny from '@/public/gpupny.png'
-import gpupowercolor from '@/public/gpupowercolor.jpg'
-
-import gabadata from '@/public/gabadata.png'
-import gabcoolermaster from '@/public/gabcoolermaster.png'
-import gabcorsair from '@/public/gabcorsair.png'
-import gabgamemax from '@/public/gabgamemax.png'
-import gabgigabyte from '@/public/gabgigabyte.png'
-import gabthermaltake from '@/public/gabthermaltake.jpg'
-
 import carimg1 from '@/public/carousel1.jpg'
 import carimg2 from '@/public/carousel2.jpg'
 import carimg3 from '@/public/carousel3.jpg'

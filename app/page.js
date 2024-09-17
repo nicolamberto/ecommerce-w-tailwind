@@ -5,17 +5,21 @@ import Benefits from "@/components/main-page-components/benefits";
 import Carousel from "@/components/main-page-components/carousel";
 import Categorias from "@/components/main-page-components/categorias";
 import Promotions from "@/components/main-page-components/promotions";
+import { CartProvider } from "@/context/cart";
 
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center">
-      <Carousel/>
-      <BannerCuotas/>
-      <Categorias/>
-      <Promotions/>
-      <BannerTemporada/>
-      <Benefits/>
-    </main>
+    
+      <main className="flex flex-col justify-center items-center">
+        <Carousel />
+        <BannerCuotas />
+        <Categorias />
+        <Promotions />
+        <BannerTemporada />
+        <Benefits />
+      </main>
+    
+
   );
 }

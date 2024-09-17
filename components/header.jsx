@@ -1,3 +1,5 @@
+'use client'
+
 import { links } from "../lib/data";
 import { FaSearch } from "react-icons/fa";
 import { FaLocationDot, FaCartShopping } from "react-icons/fa6";
@@ -8,10 +10,14 @@ import Image from "next/image";
 import logo from '@/public/logomacowens.webp'
 import Link from "next/link";
 import ModalCart from "./cart/modal-cart/modalcart";
+import { useCart } from "@/hooks/useCart";
 
 
 
 export default function Header() {
+
+    const {isCartModalOpen, openCartModal } = useCart()
+
     return (
         //promocion
         <div className="w-full">
@@ -43,8 +49,11 @@ export default function Header() {
                             <button className="absolute right-1 text-gray-400 text-2xl">{<IoIosSearch />}</button>
                         </div>
                         <button className=" text-2xl">{<IoPerson />}</button>
-                        <button className="text-2xl">{<FaCartShopping />}</button>
-                        <ModalCart/>
+                        <button className="text-2xl" onClick={openCartModal}>{<FaCartShopping />}</button>
+                        {isCartModalOpen && (
+                            <ModalCart/>
+                        )}
+                        
                     </div>
                 </div>
                 <div></div>

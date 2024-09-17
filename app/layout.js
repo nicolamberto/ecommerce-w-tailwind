@@ -7,8 +7,8 @@ import Footer from "@/components/footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
-const montserrat = Montserrat({subsets:['latin']})
-const roboto = Roboto_Condensed({subsets: ['latin'], weight:['400']})
+const montserrat = Montserrat({ subsets: ['latin'] })
+const roboto = Roboto_Condensed({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata = {
   title: "Create Next App",
@@ -18,13 +18,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <FiltersProvider>
-      <html lang="en" className="">
-        <body className={`${roboto.className} w-full flex justify-center items-center flex-col`}>
-          <Header />
-          {children}
-          <Footer/>
-        </body>
-      </html>
+      <CartProvider>
+        <html lang="en" className="">
+          <body className={`${roboto.className} w-full flex justify-center items-center flex-col`}>
+            <Header />
+            {children}
+            <Footer />
+          </body>
+        </html>
+      </CartProvider>
+
     </FiltersProvider>
 
   );

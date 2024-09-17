@@ -25,8 +25,9 @@ export default function Carousel() {
     };
 
     return (
-        <div className=" max-w-[1600px]">
-            <div className="xl:w-[1250px] lg:w-full md:w-[750px] sm:hidden md:block">
+        //TODO: ACOMODAR LOS TAMAÑOS PARA DISEÑO RESPONSIVE
+        <div className="sm:hidden md:block md:w-[100rem] max-w-[1600px]">
+            <div className="">
                 <Slider {...settings}>
 
                     {carouselImgs.map(i => (

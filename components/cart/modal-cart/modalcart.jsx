@@ -1,22 +1,18 @@
 'use client'
 
-import React, { useState } from 'react'
-import { collection } from '@/lib/data'
+import React from 'react'
 import { FaTrashCan } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
 import Image from 'next/image';
+import { useCart } from '@/hooks/useCart';
+import Link from 'next/link';
 
-
-const products = [
-    collection[0],
-    collection[1],
-]
 
 const ModalCart = () => {
 
-    const [open, setOpen] = useState(false)
+    const { closeCartModal, cart, removeFromCart } = useCart()
 
 
     return (
@@ -26,13 +22,16 @@ const ModalCart = () => {
                 {/* titulo y boton de cerrar carrito */}
                 <div className="flex flex-row justify-between items-center text-xl">
                     <p>Mi carrito</p>
-                    <RxCross2 />
+                    <button onClick={closeCartModal}>
+                        <RxCross2 />
+                    </button>
+
                 </div>
 
                 {/* mock de producto */}
                 <hr />
-                {products.map(i => (
-                    <div className=' flex flex-row gap-3 justify-between'>
+                {cart.map(i => (
+                    <div className=' flex flex-row gap-3 justify-between items-start'>
                         <div className="flex flex-row gap-3">
 
                             {/* imagen */}
@@ -51,13 +50,13 @@ const ModalCart = () => {
 
 
                         {/* cantidad y borrar producto */}
-                        <div className="">
+                        <button onClick={()=>removeFromCart(i)} className="\">
                             <FaTrashCan />
-                        </div>
-                        
+                        </button>
+
                     </div>
                 ))}
-                <hr className='w-full'/>
+                <hr className='w-full' />
 
                 {/* parte final del carrito, boton para seguir comprando, boton para finalizar compra y total del monto a abonar */}
                 <div className="flex flex-col gap-4">
@@ -72,15 +71,15 @@ const ModalCart = () => {
                     </div>
 
 
-                    <div>
+                    <Link href={'/cart'} onClick={closeCartModal}>
                         <button className='w-full text-white bg-black py-2'>IR AL CARRITO</button>
-                    </div>
+                    </Link>
 
 
-                    <div className='flex flex-row justify-center gap-3 text-gray-600 items-center text-center w-full'>
-                        <MdKeyboardArrowLeft/>
+                    <Link href={'/products'} onClick={closeCartModal} className='flex flex-row justify-center gap-3 text-gray-600 items-center text-center w-full'>
+                        <MdKeyboardArrowLeft />
                         <button>Continuar comprando</button>
-                    </div>
+                    </Link>
 
                 </div>
 
