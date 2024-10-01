@@ -14,7 +14,7 @@ const CartPage = () => {
   return (
     <div className='py-20 w-full flex flex-col items-center justify-center'>
       <p className=' text-3xl text-start w-3/4 pb-16'>Mi Carrito</p>
-      <div className='flex flex-row items-start justify-between w-3/4 gap-20'>
+      <div className='flex flex-col lg:flex-row items-start justify-between w-3/4 gap-20'>
         {/* tabla */}
         <table className=" table-auto pb-[100px] w-full">
           <thead>

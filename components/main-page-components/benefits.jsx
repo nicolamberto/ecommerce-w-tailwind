@@ -4,7 +4,7 @@ import { benefits } from '@/lib/data'
 
 export default function Benefits() {
   return (
-    <div className='grid grid-cols-3 gap-20 p-20'>
+    <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-20 p-20'>
       {benefits.map((i)=>(
         <div className='flex flex-col justify-center items-center text-xs'>
         

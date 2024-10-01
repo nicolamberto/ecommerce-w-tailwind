@@ -10,7 +10,7 @@ export function CartProvider ({children}) {
 
 
     const openCartModal = () => {
-        setIsCartModalOpen(true)
+        setIsCartModalOpen(!isCartModalOpen)
     }
 
     const closeCartModal = () => {

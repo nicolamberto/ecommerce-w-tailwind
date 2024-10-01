@@ -4,6 +4,7 @@ import Header from "../components/header";
 import { CartProvider } from "@/context/cart";
 import { FiltersProvider } from "@/context/filters";
 import Footer from "@/components/footer";
+import { ResponsiveProvider } from "@/context/responsive";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,15 +19,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <FiltersProvider>
-      <CartProvider>
-        <html lang="en" className="">
-          <body className={`${roboto.className} w-full flex justify-center items-center flex-col`}>
-            <Header />
-            {children}
-            <Footer />
-          </body>
-        </html>
-      </CartProvider>
+      <ResponsiveProvider>
+        <CartProvider>
+          <html lang="en" className="">
+            <body className={`${roboto.className} w-full flex justify-center items-center flex-col`}>
+              <Header />
+              {children}
+              <Footer />
+            </body>
+          </html>
+        </CartProvider>
+      </ResponsiveProvider>
+
 
     </FiltersProvider>
 

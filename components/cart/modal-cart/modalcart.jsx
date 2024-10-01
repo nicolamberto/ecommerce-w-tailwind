@@ -8,15 +8,24 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import Image from 'next/image';
 import { useCart } from '@/hooks/useCart';
 import Link from 'next/link';
-
+import EmptyModalCart from '../empty/empty-modal-cart/emptymodalcart';
+import { motion } from 'framer-motion';
 
 const ModalCart = () => {
 
     const { closeCartModal, cart, removeFromCart } = useCart()
+    
+    
 
-
-    return (
-        <div className=' absolute w-[400px] top-10 right-0 shadow-2xl z-30 p-6 bg-white'>
+ return (
+    
+        
+       
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{delay:0.100}}
+        className=' absolute w-[400px] top-10 right-0 shadow-2xl z-30 p-6 bg-white transition ease-in duration'>
 
             <div className='flex flex-col gap-4'>
                 {/* titulo y boton de cerrar carrito */}
@@ -27,7 +36,7 @@ const ModalCart = () => {
                     </button>
 
                 </div>
-
+                
                 {/* mock de producto */}
                 <hr />
                 {cart.map(i => (
@@ -86,7 +95,12 @@ const ModalCart = () => {
 
             </div>
 
-        </div>
+        </motion.div>
+
+      
+
+
+        
     )
 }
 

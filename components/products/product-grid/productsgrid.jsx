@@ -30,7 +30,7 @@ export default function ProductsGrid({products}) {
 
     return (
 
-        <div className=' grid grid-cols-4 w-full py-2'>
+        <div className=' grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full py-2'>
             {products.map((product) => (
                 <ProductItem key={product.name} product={product}/>
             ))}

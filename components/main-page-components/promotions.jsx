@@ -6,14 +6,14 @@ import { promoabrigos, promo2prendas } from '@/lib/data'
 
 export default function Promotions() {
     return (
-        <div className='flex flex-col justify-center items-center w-full gap-10 py-24'>
+        <div className='hidden md:flex flex-col justify-center items-center w-full gap-10 py-24'>
 
             <div className='flex flex-row justify-center items-start gap-5'>
-                <div className='h-[10rem]'>
+                <div className='hidden lg:block'>
                     <Image src={bannerpromoabrigos} width={200} height={200} />
                 </div>
 
-                <div className='flex flex-row justify-center items-center gap-2'>
+                <div className='grid md:grid-cols-4 gap-3 md:w-full lg:w-3/4 '>
                     {promoabrigos.map((i) => (
                         <div className='flex flex-col justify-center items-center gap-3 relative'>
                             {/* imagen */}
@@ -41,11 +41,11 @@ export default function Promotions() {
             </div>
 
             <div className='flex flex-row justify-center items-start gap-5'>
-                <div className='h-[10rem]'>
+                <div className='hidden lg:block'>
                     <Image src={bannerpromo2prendas} width={200} height={200} />
                 </div>
 
-                <div className='flex flex-row justify-center items-center gap-2'>
+                <div className='grid md:grid-cols-4 gap-3 md:w-full lg:w-3/4 '>
                     {promo2prendas.map((i) => (
                         <div className='flex flex-col justify-center items-center gap-3 relative'>
                             {/* imagen */}

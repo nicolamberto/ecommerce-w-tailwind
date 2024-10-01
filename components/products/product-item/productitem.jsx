@@ -8,9 +8,11 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { IoIosAdd } from "react-icons/io";
 import { BsCartPlus } from "react-icons/bs";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+/* import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules' */
+
+import { motion } from 'framer-motion'
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -63,10 +65,12 @@ const ProductItem = ({ product }) => {
     return (
         <div key={product.name} className='w-full flex justify-center items-center flex-col mb-5'>
 
-            <div className='relative group'>
+            <div 
+            
+            className='relative group'>
                 <Link href={`/product/${product.name.trim()}`}>
                     <Image
-                        className=' p-2'
+                        className=''
                         src={currentIndex}
                         alt='Product Images'
                         quality={95}
@@ -74,19 +78,30 @@ const ProductItem = ({ product }) => {
                 </Link>
 
 
-                <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] left-5 text-xl rounded-full p-2 bg-black/20 text-white/30 cursor-pointer">
+                <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] left-5 text-md rounded-full p-2 bg-black/10 text-white/30 cursor-pointer">
                     <IoIosArrowBack onClick={prevImg} />
                 </div>
 
-                <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] right-5 text-xl rounded-full p-2 bg-black/20 text-white/30 cursor-pointer">
+                <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-50%] right-5 text-md rounded-full p-2 bg-black/10 text-white/30 cursor-pointer">
                     <IoIosArrowForward onClick={nextImg} />
                 </div>
 
-                <div className='absolute hidden group-hover:block bg-black text-white bottom-2 right-[50%] translate-y-0 translate-x-[-50%] '>
-                    <p>
-                        {product.talle}
-                    </p>
-                </div>
+                <motion.div 
+                initial={{opacity:0}}
+                whileHover={{
+                    opacity:1
+                }}
+
+                className='absolute flex justify-center items-center bottom-0 gap-4 py-5 bg-opacity-25 bg-gray-400 text-white w-full text-center'>
+
+                    {product.talle.map(i => (
+                        <div className=" rounded-sm px-4 bg-gray-500 bg-opacity-40">
+                            <p>{i}</p>
+                        </div>
+
+                    ))}
+
+                </motion.div>
 
             </div>
             <div className='flex flex-col items-center justify-center gap-1 w-full relative'>
