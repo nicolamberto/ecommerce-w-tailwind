@@ -111,7 +111,7 @@ const ProductItem = ({ product }) => {
 
                 </div>
                 <p className='text-xs text-gray-500'>Nueve cuotas sin interes de $6550</p>
-                <button onClick={() => addToCart(product)} className='absolute top-0 right-2'><BsCartPlus size={23} /></button>
+                <button onClick={() => addToCart(product)} className='block lg:absolute top-5 xl:top-2 right-2'><BsCartPlus size={23} /></button>
             </div>
 
 

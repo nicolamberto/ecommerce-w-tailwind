@@ -1,0 +1,7 @@
+LISTA DE TAREAS A REALIZAR PARA TERMINAR LA PAGINA:
+
+1- implementar loaging para mejorar la optimizacion de la carga de componentes
+2- implementar todas las rutas del header, no necesariamente funcionales, pero que lleven a algun lado
+3- hacer funcional el input de busqueda del header
+4- implementar algunas animaciones y/o alertas cuando algun producto se agrega o elimina del carrito 
+5- mejorar el diseño responsive de la main page y revisar las demas paginas

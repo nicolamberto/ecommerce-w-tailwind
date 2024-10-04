@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function BannerTemporada() {
   return (
     <div>
-      <div className='hidden md:block w-4/5'>
+      <div className='hidden md:flex justify-center w-full items-center'>
         <Image src={bannertemporada} alt='banner final de temporada' />
       </div>
 

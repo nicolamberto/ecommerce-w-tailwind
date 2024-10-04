@@ -1,6 +1,6 @@
 'use client'
 
-import HeaderCollection from '@/components/headercollection'
+import HeaderCollection from '@/components/main-page-components/headercollection'
 import ProductsGrid from '@/components/products/product-grid/productsgrid'
 import { collection } from '@/lib/data'
 import React from 'react'
@@ -13,7 +13,7 @@ const page = ({ params }) => {
 
   const { id } = params
   const products = dataProducts.filter(i => i.category.toLowerCase() === id)
-  console.log(id);
+
 
   return (
     <div className='flex justify-center items-center flex-col w-4/6 '>

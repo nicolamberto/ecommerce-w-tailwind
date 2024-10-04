@@ -15,12 +15,12 @@ import './slideshow.css';
 import Image from 'next/image';
 
 
-const ProductSlideShow = ({ images, title }) => {
+const ProductSlideShowMobile = ({ images, title }) => {
 
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+ 
 
     return (
-        <div className='hidden md:block'>
+        <div className='block md:hidden'>
             <Swiper
                 style={{
                     '--swiper-navigation-color': '#fff',
@@ -28,9 +28,9 @@ const ProductSlideShow = ({ images, title }) => {
                 }}
                 spaceBetween={10}
                 navigation={true}
-                thumbs={{ swiper: thumbsSwiper }}
+                
                 modules={[FreeMode, Navigation, Thumbs]}
-                className="mySwiper2 max-w-[30rem] max-h-[46rem]"
+                className="mySwiper2 max-w-[20rem] max-h-[30rem] sm:max-w-[37rem] sm:max-h-[50rem]"
             >
                 {images.map(image => (
 
@@ -48,34 +48,9 @@ const ProductSlideShow = ({ images, title }) => {
                 ))}
 
             </Swiper>
-            <Swiper
-                onSwiper={setThumbsSwiper}
-                spaceBetween={10}
-                slidesPerView={4}
-                freeMode={true}
-                watchSlidesProgress={true}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="mySwiper max-w-[40rem] max-h-[10rem]"
-            >
-                {images.map(image => (
 
-                    <SwiperSlide key={image}>
-                        <Image
-                            src={image}
-                            alt={title}
-                            height={300}
-                            width={300}
-                            className='object-fill'
-                        />
-                    </SwiperSlide>
-
-
-
-
-                ))}
-            </Swiper>
         </div>
     )
 }
 
-export default ProductSlideShow
+export default ProductSlideShowMobile

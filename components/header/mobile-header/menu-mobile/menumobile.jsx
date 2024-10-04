@@ -17,14 +17,12 @@ const MenuMobile = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.1 }}
-            
-            >
+
+        >
             {/* menu content */}
-            
 
-            <div
 
-                className='absolute top-0 left-0 bg-white shadow-xl w-full z-50'>
+            <div className='absolute top-0 left-0 bg-white shadow-xl w-full z-50'>
                 <div>
                     <div className="flex flex-row justify-between items-center py-5">
                         <Image src={logo} width={150} alt="logo" />
@@ -64,11 +62,11 @@ const MenuMobile = () => {
                             <RiArrowDropDownLine size={20} />
                         </div>
                         {collectionOpen && (
-                            <motion.div 
-                            initial={{opacity:0}}
-                            animate={{ opacity:1}}
-                            transition={{duration:0.2}}
-                            className='flex flex-col justify-center items-start gap-4 pt-5 px-5'>
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 0.2 }}
+                                className='flex flex-col justify-center items-start gap-4 pt-5 px-5'>
                                 <p>ABRIGOS</p>
                                 <p>BERMUDAS</p>
                                 <p>BUZOS</p>
@@ -79,7 +77,7 @@ const MenuMobile = () => {
                                 <p>SACOS</p>
                             </motion.div>
                         )}
-                        
+
                     </div>
 
 

@@ -1,9 +1,9 @@
 import { Inter, Montserrat, Hind, Hind_Guntur, Roboto_Condensed, Arimo } from "next/font/google";
 import "./globals.css";
-import Header from "../components/header";
+import Header from "../components/main-page-components/header";
 import { CartProvider } from "@/context/cart";
 import { FiltersProvider } from "@/context/filters";
-import Footer from "@/components/footer";
+import Footer from "@/components/footer/footer";
 import { ResponsiveProvider } from "@/context/responsive";
 
 

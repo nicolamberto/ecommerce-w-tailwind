@@ -7,7 +7,7 @@ import { IoIosSearch } from 'react-icons/io'
 import Image from 'next/image';
 import { useResponsive } from '@/hooks/useResponsive';
 import ModalCart from '@/components/cart/modal-cart/modalcart';
-import MenuMobile from './menumobile';
+import MenuMobile from './menu-mobile/menumobile';
 import { RxCross2 } from "react-icons/rx";
 
 const MobileHeader = () => {

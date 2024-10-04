@@ -2,11 +2,10 @@
 
 import React from 'react'
 import { collection } from '@/lib/data'
-import Filters from '@/components/filters'
 import ProductsGrid from '@/components/products/product-grid/productsgrid'
 import { useFilters } from '@/hooks/useFilters'
 
-import HeaderCollection from '@/components/headercollection'
+import HeaderCollection from '@/components/main-page-components/headercollection'
 
 
 

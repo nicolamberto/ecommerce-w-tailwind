@@ -996,170 +996,170 @@ export const collection = [
 
     //chomas manga corta
     {
-        name:'CHOMBA DE JERSEY LISA VERDE',
-        description:'Chomba manga corta de jersey en color verde, con cuello polo combinado a contra tono. Calce clásico. Confeccionada en 100% algodón. Ideal para un look casual. Marca: Edmonds',
-        price:24999,
-        category:'CHOMBAS',
-        subcategory:'MANGA CORTA',
-        thumbnails:[chombadejerseylisaverde1, chombadejerseylisaverde2, chombadejerseylisaverde3, chombadejerseylisaverde4],
-        talle:['S','M','L','XL']
+        name: 'CHOMBA DE JERSEY LISA VERDE',
+        description: 'Chomba manga corta de jersey en color verde, con cuello polo combinado a contra tono. Calce clásico. Confeccionada en 100% algodón. Ideal para un look casual. Marca: Edmonds',
+        price: 24999,
+        category: 'CHOMBAS',
+        subcategory: 'MANGA CORTA',
+        thumbnails: [chombadejerseylisaverde1, chombadejerseylisaverde2, chombadejerseylisaverde3, chombadejerseylisaverde4],
+        talle: ['S', 'M', 'L', 'XL']
     },
     {
-        name:'CHOMBA DE PIQUE NEGRA',
-        description:'Chomba Edmonds de manga corta en color negro. Confeccionada en 50% algodón y 50% poliéster, garantizando durabilidad y comodidad.',
-        price:29999,
-        category:'CHOMBAS',
-        subcategory:'MANGA CORTA',
-        thumbnails:[chombadepiquenegra1, chombadepiquenegra2, chombadepiquenegra3, chombadepiquenegra4],
-        talle:['S','M','L','XL']
+        name: 'CHOMBA DE PIQUE NEGRA',
+        description: 'Chomba Edmonds de manga corta en color negro. Confeccionada en 50% algodón y 50% poliéster, garantizando durabilidad y comodidad.',
+        price: 29999,
+        category: 'CHOMBAS',
+        subcategory: 'MANGA CORTA',
+        thumbnails: [chombadepiquenegra1, chombadepiquenegra2, chombadepiquenegra3, chombadepiquenegra4],
+        talle: ['S', 'M', 'L', 'XL']
     },
     {
-        name:'CHOMBA BICOLOR AZUL MARINO',
-        description:'Chomba de manga corta en color azul marino, tejido piqué con puño bicolor, 50% Algodón, 50% Poliéster, calce regular. Marca: Edmonds',
-        price:29999,
-        category:'CHOMBAS',
-        subcategory:'MANGA CORTA',
-        thumbnails:[chombabicolorazulmarino1, chombabicolorazulmarino2, chombabicolorazulmarino3, chombabicolorazulmarino4],
-        talle:['S','M','L','XL']
+        name: 'CHOMBA BICOLOR AZUL MARINO',
+        description: 'Chomba de manga corta en color azul marino, tejido piqué con puño bicolor, 50% Algodón, 50% Poliéster, calce regular. Marca: Edmonds',
+        price: 29999,
+        category: 'CHOMBAS',
+        subcategory: 'MANGA CORTA',
+        thumbnails: [chombabicolorazulmarino1, chombabicolorazulmarino2, chombabicolorazulmarino3, chombabicolorazulmarino4],
+        talle: ['S', 'M', 'L', 'XL']
     },
     {
-        name:'CHOMBA DE PIQUE AZUL FRANCIA',
-        description:'Chomba manga corta de piqué en color azul francia. Calce entallado. Confeccionada en 60% algodón y 40% poliéster. Marca: Simonacci Polo Life.',
-        price:24999,
-        category:'CHOMBAS',
-        subcategory:'MANGA CORTA',
-        thumbnails:[chombadepiqueazulfrancia1, chombadepiqueazulfrancia2, chombadepiqueazulfrancia3, chombadepiqueazulfrancia4],
-        talle:['S','M','L','XL']
+        name: 'CHOMBA DE PIQUE AZUL FRANCIA',
+        description: 'Chomba manga corta de piqué en color azul francia. Calce entallado. Confeccionada en 60% algodón y 40% poliéster. Marca: Simonacci Polo Life.',
+        price: 24999,
+        category: 'CHOMBAS',
+        subcategory: 'MANGA CORTA',
+        thumbnails: [chombadepiqueazulfrancia1, chombadepiqueazulfrancia2, chombadepiqueazulfrancia3, chombadepiqueazulfrancia4],
+        talle: ['S', 'M', 'L', 'XL']
     },
     {
-        name:'CHOMBA DE PIQUE AZUL MARINO',
-        description:'Chomba Edmonds de manga corta en azul marino. Confeccionada en una mezcla de 50% algodón y 50% poliéster, garantizando durabilidad y comodidad.',
-        price:29999,
-        category:'CHOMBAS',
-        subcategory:'MANGA CORTA',
-        thumbnails:[chombadepiqueazulmarino1, chombadepiqueazulmarino2, chombadepiqueazulmarino3, chombadepiqueazulmarino4],
-        talle:['S','M','L','XL']
+        name: 'CHOMBA DE PIQUE AZUL MARINO',
+        description: 'Chomba Edmonds de manga corta en azul marino. Confeccionada en una mezcla de 50% algodón y 50% poliéster, garantizando durabilidad y comodidad.',
+        price: 29999,
+        category: 'CHOMBAS',
+        subcategory: 'MANGA CORTA',
+        thumbnails: [chombadepiqueazulmarino1, chombadepiqueazulmarino2, chombadepiqueazulmarino3, chombadepiqueazulmarino4],
+        talle: ['S', 'M', 'L', 'XL']
     },
     {
-        name:'CHOMBA DE PIQUE LISA AZUL MARINO',
-        description:'Chomba manga corta de piqué en color azul marino. Calce entallado. Confeccionada en 60% algodón y 40% poliéster. Marca: Simonacci Polo Life.',
-        price:24999,
-        category:'CHOMBAS',
-        subcategory:'MANGA CORTA',
-        thumbnails:[chombadepiquelisaazulmarino1, chombadepiquelisaazulmarino2, chombadepiquelisaazulmarino3, chombadepiquelisaazulmarino4],
-        talle:['S','M','L','XL']
+        name: 'CHOMBA DE PIQUE LISA AZUL MARINO',
+        description: 'Chomba manga corta de piqué en color azul marino. Calce entallado. Confeccionada en 60% algodón y 40% poliéster. Marca: Simonacci Polo Life.',
+        price: 24999,
+        category: 'CHOMBAS',
+        subcategory: 'MANGA CORTA',
+        thumbnails: [chombadepiquelisaazulmarino1, chombadepiquelisaazulmarino2, chombadepiquelisaazulmarino3, chombadepiquelisaazulmarino4],
+        talle: ['S', 'M', 'L', 'XL']
     },
     {
-        name:'CHOMBA DE PIQUE RAYADA ROJA',
-        description:'Chomba manga corta de tela Piqué con diseño Rayado de color Rojo. De cuello polo con juego de botones. De calce clásico. Composición 100% algodón cardado. Marca: Simonacci Polo Life. Ideal para combinar con un look casual o de verano.',
-        price:24999,
-        category:'CHOMBAS',
-        subcategory:'MANGA CORTA',
-        thumbnails:[chombadepiquerayadaroja1, chombadepiquerayadaroja2, chombadepiquerayadaroja3, chombadepiquerayadaroja4],
-        talle:['S','M','L','XL']
+        name: 'CHOMBA DE PIQUE RAYADA ROJA',
+        description: 'Chomba manga corta de tela Piqué con diseño Rayado de color Rojo. De cuello polo con juego de botones. De calce clásico. Composición 100% algodón cardado. Marca: Simonacci Polo Life. Ideal para combinar con un look casual o de verano.',
+        price: 24999,
+        category: 'CHOMBAS',
+        subcategory: 'MANGA CORTA',
+        thumbnails: [chombadepiquerayadaroja1, chombadepiquerayadaroja2, chombadepiquerayadaroja3, chombadepiquerayadaroja4],
+        talle: ['S', 'M', 'L', 'XL']
     },
     {
-        name:'CHOMBA LISA AZUL MARINO',
-        description:'Chomba manga corta con diseño liso, presentada en un color azul marino. Se caracteriza por su corte regular fit, que la hace muy comoda. Fabricada con una composición de 65% algodón y 35% poliéster, combinando resistencia y comodidad. Simonacci Polo Life.',
-        price:24999,
-        category:'CHOMBAS',
-        subcategory:'MANGA CORTA',
-        thumbnails:[chombalisaazulmarino1, chombalisaazulmarino2, chombalisaazulmarino3, chombalisaazulmarino4],
-        talle:['S','M','L','XL']
+        name: 'CHOMBA LISA AZUL MARINO',
+        description: 'Chomba manga corta con diseño liso, presentada en un color azul marino. Se caracteriza por su corte regular fit, que la hace muy comoda. Fabricada con una composición de 65% algodón y 35% poliéster, combinando resistencia y comodidad. Simonacci Polo Life.',
+        price: 24999,
+        category: 'CHOMBAS',
+        subcategory: 'MANGA CORTA',
+        thumbnails: [chombalisaazulmarino1, chombalisaazulmarino2, chombalisaazulmarino3, chombalisaazulmarino4],
+        talle: ['S', 'M', 'L', 'XL']
     },
 
     //chomba manga larga
     {
-        name:'CHOMBA RAYADA PIQUE NEGRA',
-        descrption:'Chomba manga larga con diseño rayado en color negro. Cuello polo y calce clásico. Confeccionada en 90% algodón, 10% poliéster. Ideal para completar un look casual y moderno. Marca: Simonacci Polo Life',
-        price:29999,
-        category:'CHOMBAS',
-        subcategory:'MANGA LARGA',
-        thumbnails:[chombarayadapiquenegra1, chombarayadapiquenegra2, chombarayadapiquenegra3, chombarayadapiquenegra4],
-        talle:['S','M','L','XL']
+        name: 'CHOMBA RAYADA PIQUE NEGRA',
+        descrption: 'Chomba manga larga con diseño rayado en color negro. Cuello polo y calce clásico. Confeccionada en 90% algodón, 10% poliéster. Ideal para completar un look casual y moderno. Marca: Simonacci Polo Life',
+        price: 29999,
+        category: 'CHOMBAS',
+        subcategory: 'MANGA LARGA',
+        thumbnails: [chombarayadapiquenegra1, chombarayadapiquenegra2, chombarayadapiquenegra3, chombarayadapiquenegra4],
+        talle: ['S', 'M', 'L', 'XL']
     },
 
     //camisas sport
     {
-        name:'CAMISA A CUADROS VIYELA BORDO',
-        description:'Camisa a cuadros manga larga tipo leñadora de viyela con capucha en color bordó. Composición: 50% algodón, 50% poliéster. Un imprescindible en tu guardarropa. Marca: Simonacci Polo Life',
-        price:29999,
-        category:'CAMISAS',
-        subcategory:'SPORT',
-        thumbnails:[camisaacuadrosviyelabordo1, camisaacuadrosviyelabordo2, camisaacuadrosviyelabordo3, camisaacuadrosviyelabordo4],
-        talle:['38','40','42']
+        name: 'CAMISA A CUADROS VIYELA BORDO',
+        description: 'Camisa a cuadros manga larga tipo leñadora de viyela con capucha en color bordó. Composición: 50% algodón, 50% poliéster. Un imprescindible en tu guardarropa. Marca: Simonacci Polo Life',
+        price: 29999,
+        category: 'CAMISAS',
+        subcategory: 'SPORT',
+        thumbnails: [camisaacuadrosviyelabordo1, camisaacuadrosviyelabordo2, camisaacuadrosviyelabordo3, camisaacuadrosviyelabordo4],
+        talle: ['38', '40', '42']
     },
     {
-        name:'CAMISA CASUAL DENIM AZUL',
-        description:'Camisa casual manga larga en denim en color azul. Cuello botón escondido y calce clásico. Confeccionada en 100% algodón . Ideal para combinar con un look casual invernal. Marca: Simonacci Polo Life',
-        price:45999,
-        category:'CAMISAS',
-        subcategory:'SPORT',
-        thumbnails:[camisacasualdenimazul1, camisacasualdenimazul2, camisacasualdenimazul3, camisacasualdenimazul4],
-        talle:['38','40','42']
+        name: 'CAMISA CASUAL DENIM AZUL',
+        description: 'Camisa casual manga larga en denim en color azul. Cuello botón escondido y calce clásico. Confeccionada en 100% algodón . Ideal para combinar con un look casual invernal. Marca: Simonacci Polo Life',
+        price: 45999,
+        category: 'CAMISAS',
+        subcategory: 'SPORT',
+        thumbnails: [camisacasualdenimazul1, camisacasualdenimazul2, camisacasualdenimazul3, camisacasualdenimazul4],
+        talle: ['38', '40', '42']
     },
     {
-        name:'CAMISA SPORT LISA NEGRA',
-        description:'Camisa casual manga larga con diseño liso en color negro, con cuello punta botón y calce clásico. Confeccionada en 100% algodón. Marca: Simonacci Polo Life',
-        price:45999,
-        category:'CAMISAS',
-        subcategory:'SPORT',
-        thumbnails:[camisasportlisanegra1, camisasportlisanegra2, camisasportlisanegra3, camisasportlisanegra4],
-        talle:['38','40','42']
+        name: 'CAMISA SPORT LISA NEGRA',
+        description: 'Camisa casual manga larga con diseño liso en color negro, con cuello punta botón y calce clásico. Confeccionada en 100% algodón. Marca: Simonacci Polo Life',
+        price: 45999,
+        category: 'CAMISAS',
+        subcategory: 'SPORT',
+        thumbnails: [camisasportlisanegra1, camisasportlisanegra2, camisasportlisanegra3, camisasportlisanegra4],
+        talle: ['38', '40', '42']
     },
     {
-        name:'asd',
-        description:'asd',
-        price:0,
-        category:'CAMISAS',
-        subcategory:'SPORT',
-        thumbnails:[],
-        talle:['38','40','42']
+        name: 'asd',
+        description: 'asd',
+        price: 0,
+        category: 'CAMISAS',
+        subcategory: 'SPORT',
+        thumbnails: [],
+        talle: ['38', '40', '42']
     },
     {
-        name:'CAMISA SPORT FIT LISA VERDE OSCURO',
-        description:'Camisa casual manga larga con diseño liso en color verde oscuro, con cuello botón escondido y calce entallado. Confeccionada en 100% Algodón. Prenda ideal para completar un look casual. Marca: Edmonds',
-        price:29999,
-        category:'CAMISAS',
-        subcategory:'SPORT',
-        thumbnails:[camisasportfitlisaverdeoscuro1, camisasportfitlisaverdeoscuro2, camisasportfitlisaverdeoscuro3, camisasportfitlisaverdeoscuro4],
-        talle:['38','40','42']
+        name: 'CAMISA SPORT FIT LISA VERDE OSCURO',
+        description: 'Camisa casual manga larga con diseño liso en color verde oscuro, con cuello botón escondido y calce entallado. Confeccionada en 100% Algodón. Prenda ideal para completar un look casual. Marca: Edmonds',
+        price: 29999,
+        category: 'CAMISAS',
+        subcategory: 'SPORT',
+        thumbnails: [camisasportfitlisaverdeoscuro1, camisasportfitlisaverdeoscuro2, camisasportfitlisaverdeoscuro3, camisasportfitlisaverdeoscuro4],
+        talle: ['38', '40', '42']
     },
     {
-        name:'CAMISA SPORT VIYELA BEIGE',
-        description:'Camisa sport de viyela manga larga corte western en color beige. Cuello soft y calce clásico. Confeccionada en 65% Poliéster 35% Algodón . Ideal para combinar con un look casual invernal. Marca: Simonacci Polo Life',
-        price:29999,
-        category:'CAMISAS',
-        subcategory:'SPORT',
-        thumbnails:[camisasportviyelabeige1, camisasportviyelabeige2, camisasportviyelabeige3, camisasportviyelabeige4],
-        talle:['38','40','42']
+        name: 'CAMISA SPORT VIYELA BEIGE',
+        description: 'Camisa sport de viyela manga larga corte western en color beige. Cuello soft y calce clásico. Confeccionada en 65% Poliéster 35% Algodón . Ideal para combinar con un look casual invernal. Marca: Simonacci Polo Life',
+        price: 29999,
+        category: 'CAMISAS',
+        subcategory: 'SPORT',
+        thumbnails: [camisasportviyelabeige1, camisasportviyelabeige2, camisasportviyelabeige3, camisasportviyelabeige4],
+        talle: ['38', '40', '42']
     },
     {
-        name:'CAMISA SPORT RAYADA AZUL MARINO',
-        description:'Camisa sport manga larga con diseño rayado en color azul marino. Cuello punta botón y calce clásico. Confeccionada en 97% algodón y 3% elastano para mayor confort. Ideal para combinar con un look casual. Marca: Simonacci Polo Life',
-        price:39999,
-        category:'CAMISAS',
-        subcategory:'SPORT',
-        thumbnails:[camisasportrayadaazulmarino1, camisasportrayadaazulmarino2, camisasportrayadaazulmarino3, camisasportrayadaazulmarino4],
-        talle:['38','40','42']
+        name: 'CAMISA SPORT RAYADA AZUL MARINO',
+        description: 'Camisa sport manga larga con diseño rayado en color azul marino. Cuello punta botón y calce clásico. Confeccionada en 97% algodón y 3% elastano para mayor confort. Ideal para combinar con un look casual. Marca: Simonacci Polo Life',
+        price: 39999,
+        category: 'CAMISAS',
+        subcategory: 'SPORT',
+        thumbnails: [camisasportrayadaazulmarino1, camisasportrayadaazulmarino2, camisasportrayadaazulmarino3, camisasportrayadaazulmarino4],
+        talle: ['38', '40', '42']
     },
     {
-        name:'CAMISA SPORT LISA CAMEL',
-        description:'Camisa casual manga larga con diseño liso en color camel, con cuello punta botón y calce clásico. Confeccionada en 100% algodón. Marca: Simonacci Polo Life',
-        price:45999,
-        category:'CAMISAS',
-        subcategory:'SPORT',
-        thumbnails:[camisasportlisacamel1, camisasportlisacamel2, camisasportlisacamel3, camisasportlisacamel4],
-        talle:['38','40','42']
+        name: 'CAMISA SPORT LISA CAMEL',
+        description: 'Camisa casual manga larga con diseño liso en color camel, con cuello punta botón y calce clásico. Confeccionada en 100% algodón. Marca: Simonacci Polo Life',
+        price: 45999,
+        category: 'CAMISAS',
+        subcategory: 'SPORT',
+        thumbnails: [camisasportlisacamel1, camisasportlisacamel2, camisasportlisacamel3, camisasportlisacamel4],
+        talle: ['38', '40', '42']
     },
     {
-        name:'CAMISA SPORT VIYELA TOSTADA',
-        description:'Camisa casual manga larga con diseño liso en color camel, con cuello punta botón y calce clásico. Confeccionada en 100% algodón. Marca: Simonacci Polo Life',
-        price:29999,
-        category:'CAMISAS',
-        subcategory:'SPORT',
-        thumbnails:[camisasportviyelatostada1, camisasportviyelatostada2, camisasportviyelatostada3, camisasportviyelatostada4],
-        talle:['38','40','42']
+        name: 'CAMISA SPORT VIYELA TOSTADA',
+        description: 'Camisa casual manga larga con diseño liso en color camel, con cuello punta botón y calce clásico. Confeccionada en 100% algodón. Marca: Simonacci Polo Life',
+        price: 29999,
+        category: 'CAMISAS',
+        subcategory: 'SPORT',
+        thumbnails: [camisasportviyelatostada1, camisasportviyelatostada2, camisasportviyelatostada3, camisasportviyelatostada4],
+        talle: ['38', '40', '42']
     },
 
 ]
@@ -1167,14 +1167,17 @@ export const collection = [
 export const infoproductlogistic = [
     {
         name: 'Métodos de pago',
-        logo: <BsFillCreditCard2BackFill/> 
+        logo: <BsFillCreditCard2BackFill />,
+        text: 'Aceptamos pagos en una o más cuotas con todas las tarjetas de crédito y todos los bancos. Importante: Las promociones bancarias no son aplicables a compras a través de Mercado Pago así como a Cuota Simple. A la hora de realizar un pago, se encriptan de forma segura todos los datos.Para una mayor seguridad, no guardamos los datos de las tarjetas.'
     },
     {
-        name:'Métodos de envío',
-        logo: <FaTruck/>
+        name: 'Métodos de envío',
+        logo: <FaTruck />,
+        text: 'Realizamos envíos a todo el país. Trabajamos con TREGGO, ANDREANI  y OCA como transportes logísticos para dichos envíos. Además contamos con modalidad de retiro en tiendas de la marca y sucursales ANDREANI y OCA.'
     },
     {
-        name:'Politicas de cambios',
-        logo:<MdPublishedWithChanges/>
+        name: 'Politicas de cambios',
+        logo: <MdPublishedWithChanges />,
+        text: 'Para realizar un cambio de producto, la prenda debe estar en el mismo estado en el que fueron recibidas, sin uso y con el embalaje y etiquetas originales. Estas condiciones no aplican para cambios de ropa interior ya que las mismas no tienen cambio. El plazo para solicitarlo es de hasta 30 días corridos desde recibida la prenda. '
     }
 ]

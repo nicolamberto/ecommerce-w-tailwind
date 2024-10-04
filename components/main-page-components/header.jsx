@@ -1,6 +1,6 @@
 'use client'
 
-import { links } from "../lib/data";
+import { links } from "../../lib/data";
 import { FaSearch } from "react-icons/fa";
 import { FaLocationDot, FaCartShopping } from "react-icons/fa6";
 import { BsFillCreditCard2BackFill } from "react-icons/bs";
@@ -9,11 +9,11 @@ import { IoPerson } from "react-icons/io5";
 import Image from "next/image";
 import logo from '@/public/logomacowens.webp'
 import Link from "next/link";
-import ModalCart from "./cart/modal-cart/modalcart";
+import ModalCart from "../cart/modal-cart/modalcart";
 import { useCart } from "@/hooks/useCart";
 import { motion } from "framer-motion";
-import DesktopHeader from "./header/desktop-header/desktopheader";
-import MobileHeader from "./header/mobile-header/mobileheader";
+import DesktopHeader from "../header/desktop-header/desktopheader";
+import MobileHeader from "../header/mobile-header/mobileheader";
 
 
 export default function Header() {
