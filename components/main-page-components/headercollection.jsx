@@ -2,12 +2,15 @@ import React from 'react'
 import { MdFilterList } from "react-icons/md";
 import { collection } from '@/lib/data';
 
-export default function HeaderCollection() {
+export default function HeaderCollection({ products }) {
   return (
     <div className='flex flex-col justify-center items-center gap-10 w-full pt-2'>
+
         <div className="text-xs justify-start w-full">
-            <p>Home / Coleccion</p>
+          <p>HOME / COLECCION / {products.length >0 && products[0].category}</p>
         </div>
+      
+
       <div className="text-3xl font-bold">
         <h2>COLECCION</h2>
       </div>
@@ -16,16 +19,24 @@ export default function HeaderCollection() {
       </div>
       <div className="flex flex-row justify-between items-center w-full">
         <div className="flex flex-row justify-center items-center">
-            <MdFilterList className="text-xl"/>
-            <p>FILTRAR</p>
+          <MdFilterList className="text-xl" />
+          <p>FILTRAR</p>
         </div>
         <div className="text-gray-400">
-            <p>{collection.length} productos</p>
+          <p>{collection.length} productos</p>
         </div>
         <div className="">
-            Ordenar por:
+          Ordenar por:
         </div>
       </div>
+
+      
+      {products.length === 0 && 
+        <div>
+          <p>No hay articulos para mostrar</p>
+          </div>}
+
+
     </div>
   )
 }

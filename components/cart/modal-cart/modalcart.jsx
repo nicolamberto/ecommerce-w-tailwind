@@ -22,7 +22,7 @@ const ModalCart = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.100 }}
-            className=' absolute w-[400px] top-10 right-0 shadow-2xl z-50 p-6 bg-white transition ease-in duration'>
+            className=' absolute w-full sm:w-[400px] top-10 right-0 shadow-2xl z-50 p-6 bg-white transition ease-in duration'>
 
             <div className='flex flex-col gap-4'>
                 {/* titulo y boton de cerrar carrito */}

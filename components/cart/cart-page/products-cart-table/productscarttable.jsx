@@ -1,5 +1,6 @@
 'use client'
 
+import { useAlert } from "@/hooks/useAlert";
 import { useCart } from "@/hooks/useCart";
 
 import Image from "next/image";
@@ -9,7 +10,7 @@ import { FaTrashCan } from "react-icons/fa6";
 const ProductsCartTable = () => {
 
     const { cart, addToCart, removeOneItem, removeFromCart } = useCart()
-
+    const { handleAlertRemoveFromCart } = useAlert()
 
     return (
         <table className=" table-auto pb-[100px] w-full">
@@ -45,7 +46,11 @@ const ProductsCartTable = () => {
                             </div>
                         </td>
                         <td className='text-sm md:text-base'>${i.price}</td>
-                        <td><button onClick={() => removeFromCart(i)}><FaTrashCan /></button></td>
+                        <td>
+                            <button onClick={() => removeFromCart(i)}>
+                                <div onClick={handleAlertRemoveFromCart}><FaTrashCan /></div>
+                            </button>
+                        </td>
 
                     </tr>
 

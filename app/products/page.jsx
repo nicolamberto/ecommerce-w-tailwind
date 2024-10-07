@@ -15,7 +15,7 @@ export default function page() {
 
     return (
         <div className='flex justify-center items-center flex-col w-4/6 '>
-            <HeaderCollection/>
+            <HeaderCollection products={collection}/>
             <div className=' flex justify-center items-center w-full'>
                 <ProductsGrid products={collection} />
             </div>

@@ -1,9 +1,11 @@
 import react from "react";
 import InfoProductLogistic from "../infoproductlogistic/infoproductlogistic";
+import { useAlert } from "@/hooks/useAlert";
 
 
 const InfoProduct = ({product, addToCart}) => {
 
+const {handleAlertAddToCart} = useAlert()
     return (
 
         <div className='flex flex-col items-start justify-between w-full gap-5 pt-10 md:pt-0'>
@@ -34,7 +36,7 @@ const InfoProduct = ({product, addToCart}) => {
             </div>
 
             {/* boton de agregar al carrito */}
-            <div>
+            <div onClick={handleAlertAddToCart}>
                 <button className='bg-gray-900 text-gray-200 p-3' onClick={() => addToCart(product)}>AGREGAR AL CARRITO</button>
             </div>
 

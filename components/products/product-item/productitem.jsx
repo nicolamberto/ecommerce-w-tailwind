@@ -19,11 +19,11 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import { useCart } from '@/hooks/useCart'
-
+import { useAlert } from '@/hooks/useAlert'
 const ProductItem = ({ product }) => {
 
     const { addToCart } = useCart()
-
+    const { handleAlertAddToCart } = useAlert()
 
 
     const [currentIndex, setCurrentIndex] = useState(product.thumbnails[0])
@@ -65,9 +65,9 @@ const ProductItem = ({ product }) => {
     return (
         <div key={product.name} className='w-full flex justify-center items-center flex-col mb-5'>
 
-            <div 
-            
-            className='relative group'>
+            <div
+
+                className='relative group'>
                 <Link href={`/product/${product.name.trim()}`}>
                     <Image
                         className=''
@@ -86,13 +86,13 @@ const ProductItem = ({ product }) => {
                     <IoIosArrowForward onClick={nextImg} />
                 </div>
 
-                <motion.div 
-                initial={{opacity:0}}
-                whileHover={{
-                    opacity:1
-                }}
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileHover={{
+                        opacity: 1
+                    }}
 
-                className='absolute flex justify-center items-center bottom-0 gap-4 py-5 bg-opacity-25 bg-gray-400 text-white w-full text-center'>
+                    className='absolute flex justify-center items-center bottom-0 gap-4 py-5 bg-opacity-25 bg-gray-400 text-white w-full text-center'>
 
                     {product.talle.map(i => (
                         <div className=" rounded-sm px-4 bg-gray-500 bg-opacity-40">
@@ -111,7 +111,14 @@ const ProductItem = ({ product }) => {
 
                 </div>
                 <p className='text-xs text-gray-500'>Nueve cuotas sin interes de $6550</p>
-                <button onClick={() => addToCart(product)} className='block lg:absolute top-5 xl:top-2 right-2'><BsCartPlus size={23} /></button>
+                <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    animation={{duration:1000}}
+                    onClick={() => addToCart(product)}
+                    className='block lg:absolute top-5 xl:top-2 right-2'
+                ><BsCartPlus size={23} onClick={handleAlertAddToCart} />
+                </motion.button>
             </div>
 
 

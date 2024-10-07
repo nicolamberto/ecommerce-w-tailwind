@@ -9,11 +9,12 @@ import { useResponsive } from '@/hooks/useResponsive';
 import ModalCart from '@/components/cart/modal-cart/modalcart';
 import MenuMobile from './menu-mobile/menumobile';
 import { RxCross2 } from "react-icons/rx";
+import { useCart } from '@/hooks/useCart';
 
 const MobileHeader = () => {
 
     const { isMenuOpen, openMenu } = useResponsive()
-
+    const {cart, openCartModal, isCartModalOpen} = useCart()
 
     return (
         <div className="">
@@ -32,7 +33,13 @@ const MobileHeader = () => {
                 {/* carrito y search */}
                 <div className='flex flex-row items-center gap-3'>
                     <IoIosSearch size={23} />
-                    <FaCartShopping size={20} />
+                    <button className='relative' onClick={openCartModal}>
+                        <FaCartShopping size={20} />
+                        <p className='absolute text-sm bottom-3 -right-2'>{cart.length}</p>
+                    </button>
+                    {isCartModalOpen && (
+                    <ModalCart />
+                )}
                 </div>
 
                 {/* menu mobile */}

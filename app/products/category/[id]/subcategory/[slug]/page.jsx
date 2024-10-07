@@ -11,9 +11,10 @@ const dataProducts = collection
 
 const page = ({ params }) => {
 
-  const { id } = params
-  const products = dataProducts.filter(i => i.category.toLowerCase() === id)
-
+  const { slug } = params
+  const products = dataProducts.filter(i => i.subcategory.toLowerCase().replace(/ /g, '') === slug)
+  console.log(products);
+  
 
   return (
     <div className='flex justify-center items-center flex-col w-4/6 '>

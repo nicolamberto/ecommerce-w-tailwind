@@ -395,27 +395,33 @@ export const carouselImgs = [
 export const categories = [
     {
         name: 'camisas',
-        img: categoriacamisas
+        img: categoriacamisas,
+        link: '/products/category/camisas'
     },
     {
         name: 'buzos',
-        img: categoriabuzos
+        img: categoriabuzos,
+        link: '/products/category/buzos'
     },
     {
         name: 'camperas',
-        img: categoriacamperas
+        img: categoriacamperas,
+        link: '/products/category/abrigos/subcategory/camperas'
     },
     {
         name: 'chalecos',
-        img: categoriachalecos
+        img: categoriachalecos,
+        link: '/products/category/abrigos'
     },
     {
         name: 'jeans',
-        img: categoriajeans
+        img: categoriajeans,
+        link: '/products/category/jeans'
     },
     {
         name: 'sweaters',
-        img: categoriasweaters
+        img: categoriasweaters,
+        link: '/products/category/buzos/subcategory/sweaters'
     },
 ]
 
@@ -1105,15 +1111,6 @@ export const collection = [
         category: 'CAMISAS',
         subcategory: 'SPORT',
         thumbnails: [camisasportlisanegra1, camisasportlisanegra2, camisasportlisanegra3, camisasportlisanegra4],
-        talle: ['38', '40', '42']
-    },
-    {
-        name: 'asd',
-        description: 'asd',
-        price: 0,
-        category: 'CAMISAS',
-        subcategory: 'SPORT',
-        thumbnails: [],
         talle: ['38', '40', '42']
     },
     {
