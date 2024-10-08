@@ -14,7 +14,8 @@ export function useAlert() {
             showConfirmButton: true,
             timer: 1500,
             width: '300px',
-            confirmButtonColor: 'black'
+            confirmButtonColor: 'black',
+            backdrop:false
         });
     }
 

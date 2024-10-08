@@ -14,7 +14,6 @@ export function ResponsiveProvider({ children }) {
         setCollectionOpen(!collectionOpen)
     }
 
-
     const openMenu = () => {
         setIsMenuOpen(true)
     }

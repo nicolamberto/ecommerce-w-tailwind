@@ -5,6 +5,7 @@ import { CartProvider } from "@/context/cart";
 import { FiltersProvider } from "@/context/filters";
 import Footer from "@/components/footer/footer";
 import { ResponsiveProvider } from "@/context/responsive";
+import { SearchProvider } from "@/context/search";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,13 +22,15 @@ export default function RootLayout({ children }) {
     <FiltersProvider>
       <ResponsiveProvider>
         <CartProvider>
-          <html lang="en" className="">
-            <body className={`${roboto.className} w-full flex justify-center items-center flex-col`}>
-              <Header />
-              {children}
-              <Footer />
-            </body>
-          </html>
+          <SearchProvider>
+            <html lang="en" className="">
+              <body className={`${roboto.className} w-full flex justify-center items-center flex-col`}>
+                <Header />
+                {children}
+                <Footer />
+              </body>
+            </html>
+          </SearchProvider>
         </CartProvider>
       </ResponsiveProvider>
 

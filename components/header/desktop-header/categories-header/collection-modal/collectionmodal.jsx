@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CollectionModal = () => {
     return (
-        <motion.div className="hidden group-hover:flex group-hover:justify-center group-hover:items-center w-full bg-white">
+        <motion.div className="hidden group-hover:flex group-hover:justify-center group-hover:items-center w-full bg-white ">
             <div className="absolute top-5 flex justify-center items-center bg-white gap-4 w-full z-10">
                 <div className="grid grid-cols-5 w-4/6 gap-10 py-14">
                     <div className="w-full flex justify-center items-start flex-col gap-3">
